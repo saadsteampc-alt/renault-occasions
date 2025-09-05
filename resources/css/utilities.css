@@ -1,0 +1,453 @@
+/* Utility Classes */
+
+/* Text Utilities */
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-underline-hover:hover {
+    text-decoration: underline;
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-break-word {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Display Utilities */
+.d-inline-flex-center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Spacing Utilities */
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.gap-4 {
+    gap: 1.5rem;
+}
+
+.gap-5 {
+    gap: 3rem;
+}
+
+/* Width Utilities */
+.w-auto {
+    width: auto;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* Height Utilities */
+.h-auto {
+    height: auto;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* Flex Utilities */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Cursor Utilities */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+/* Border Utilities */
+.rounded-top-0 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.rounded-bottom-0 {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.rounded-left-0 {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.rounded-right-0 {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Shadow Utilities */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+/* Opacity Utilities */
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Transition Utilities */
+.transition {
+    transition: all 0.2s ease-in-out;
+}
+
+.transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Transform Utilities */
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.scale-90 {
+    transform: scale(0.9);
+}
+
+.scale-100 {
+    transform: scale(1);
+}
+
+.scale-110 {
+    transform: scale(1.1);
+}
+
+/* Overflow Utilities */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+/* Position Utilities */
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Z-index Utilities */
+.z-0 {
+    z-index: 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.z-30 {
+    z-index: 30;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+/* Object Fit Utilities */
+.object-cover {
+    object-fit: cover;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-fill {
+    object-fit: fill;
+}
+
+.object-scale-down {
+    object-fit: scale-down;
+}
+
+/* Aspect Ratio Utilities */
+.aspect-ratio-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-4-3 {
+    aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-1-1 {
+    aspect-ratio: 1 / 1;
+}
+
+/* Responsive Image */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text Selection */
+.select-none {
+    user-select: none;
+}
+
+.select-text {
+    user-select: text;
+}
+
+/* Pointer Events */
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.pointer-events-auto {
+    pointer-events: auto;
+}
+
+/* Scroll Behavior */
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+/* List Style */
+.list-style-none {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+/* Aspect Ratio Container */
+.aspect-ratio-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.aspect-ratio-container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 3.5rem;
+    height: 1.75rem;
+    padding: 0.25rem;
+    border-radius: 9999px;
+    background-color: #e2e8f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+[data-theme="dark"] .dark-mode-toggle {
+    background-color: #4a5568;
+}
+
+.dark-mode-toggle__slider {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.2s ease;
+}
+
+[data-theme="dark"] .dark-mode-toggle__slider {
+    transform: translateX(1.75rem);
+}
+
+.dark-mode-toggle__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #4a5568;
+    font-size: 0.75rem;
+    transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .dark-mode-toggle__icon {
+    color: #e2e8f0;
+}
+
+/* Print Utilities */
+@media print {
+    .print-hidden {
+        display: none !important;
+    }
+    
+    .print-block {
+        display: block !important;
+    }
+    
+    .print-inline {
+        display: inline !important;
+    }
+    
+    .print-inline-block {
+        display: inline-block !important;
+    }
+    
+    .print-grid {
+        display: grid !important;
+    }
+    
+    .print-flex {
+        display: flex !important;
+    }
+    
+    .print-inline-flex {
+        display: inline-flex !important;
+    }
+    
+    .print-break-inside-avoid {
+        break-inside: avoid;
+    }
+    
+    .print-break-before {
+        break-before: page;
+    }
+    
+    .print-break-after {
+        break-after: page;
+    }
+}

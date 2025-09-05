@@ -1,0 +1,298 @@
+/* Card Styles */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--card-bg);
+    background-clip: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    border-color: var(--accent);
+}
+
+[data-theme="dark"] .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: calc(var(--radius-md) - 1px);
+    border-top-right-radius: calc(var(--radius-md) - 1px);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.card-subtitle {
+    margin-top: -0.375rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.card-text {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.card-link {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.card-link:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.card-header {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.card-header:first-child {
+    border-radius: calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px) 0 0;
+}
+
+.card-footer {
+    padding: 1rem 1.5rem;
+    background-color: var(--secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px);
+}
+
+/* Card Image Overlay */
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    border-radius: calc(var(--radius-md) - 1px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.card-img-overlay .card-title,
+.card-img-overlay .card-text {
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Groups */
+.card-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .card-group {
+        flex-flow: row wrap;
+        column-gap: 1.5rem;
+    }
+    
+    .card-group > .card {
+        flex: 1 0 0%;
+        margin-bottom: 0;
+    }
+}
+
+/* Card Decks */
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="dark"] .card-hover:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Card with Shadow */
+.card-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Card with Border */
+.card-bordered {
+    border: 1px solid var(--border-color);
+}
+
+/* Card with Hover Animation */
+.card-hover-animate {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+.card-hover-animate:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="dark"] .card-hover-animate:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Card with Gradient */
+.card-gradient {
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--secondary) 100%);
+    border: none;
+}
+
+/* Card with Image Zoom */
+.card-img-zoom {
+    overflow: hidden;
+}
+
+.card-img-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.card-img-zoom:hover img {
+    transform: scale(1.05);
+}
+
+/* Card with Badge */
+.card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    background-color: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Card with Ribbon */
+.card-ribbon {
+    position: absolute;
+    top: 1rem;
+    right: -2.5rem;
+    width: 10rem;
+    padding: 0.5rem 0;
+    background-color: var(--accent);
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+/* Card with Tabs */
+.card-tabs .card-header {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.card-tabs .nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-tabs .nav-link {
+    padding: 1rem 1.5rem;
+    color: var(--text-secondary);
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.card-tabs .nav-link.active {
+    color: var(--accent);
+    background-color: transparent;
+    border-bottom-color: var(--accent);
+}
+
+.card-tabs .nav-link:hover:not(.active) {
+    border-bottom-color: var(--border-color);
+}
+
+/* Card with Stats */
+.card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card-stats-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.card-stats-item i {
+    color: var(--accent);
+}
+
+/* Responsive Card Adjustments */
+@media (max-width: 767.98px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}
